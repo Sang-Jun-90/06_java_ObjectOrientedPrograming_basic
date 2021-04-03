@@ -1,5 +1,6 @@
 package step6_01.classObject;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -42,6 +43,37 @@ public class ClassEx09_정답 {
 			
 			i++;
 		}
+
+		int cnt = 0;
+		
+		while(cnt < e.front.length % 2) {
+			
+			System.out.println(Arrays.toString(e.front));
+			System.out.println();
+			System.out.print("선택 1  : ");
+			int input1 = scan.nextInt();		
+			System.out.print("선택 2  : ");
+			int input2 = scan.nextInt();		
+			
+			if (e.front[input1] == e.front[input2]) {
+				
+				e.back[input1] = 1;
+				e.back[input2] = 1;
+				e.front[input1] = 0;
+				e.front[input2] = 0;
+				cnt++;
+				
+			}
+			else System.out.println("땡 ");
+			
+			if (cnt < e.front.length % 2) System.out.println("성공 ");
+			
+		}
+		
+		
+		
+		
+		
 		
 	}
 

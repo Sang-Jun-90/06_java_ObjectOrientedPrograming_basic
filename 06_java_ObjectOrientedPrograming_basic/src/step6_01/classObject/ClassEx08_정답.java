@@ -60,9 +60,11 @@ public class ClassEx08_정답 {
 					
 					
 				}
-				e.game[playerLocation] = 0;
-				e.game[playerLocation-1] = 2;
-				playerLocation--;
+				else {
+					e.game[playerLocation] = 0;
+					e.game[playerLocation-1] = 2;
+					playerLocation--;
+				}
 				
 				
 			}
@@ -82,10 +84,11 @@ public class ClassEx08_정답 {
 					else continue;
 					
 				}
-				
-				e.game[playerLocation] = 0;
-				e.game[playerLocation+1] = 2;
-				playerLocation++;
+				else  {
+					e.game[playerLocation] = 0;
+					e.game[playerLocation+1] = 2;
+					playerLocation++;				
+				}
 			}
 			
 			
